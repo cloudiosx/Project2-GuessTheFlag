@@ -1,0 +1,19 @@
+//
+//  ViewController.swift
+//  Project2 - Guess the Flag
+//
+//  Created by John Kim on 1/20/22.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
+
