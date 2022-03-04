@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     var score = 0
     var questionsAsked = 0
     
-    func askQuestion(action: UIAlertAction! = nil) {
+    func askQuestion(action: UIAlertAction!) {
         // Guess which flag: random numbers
         countries.shuffle()
         button1.setImage(UIImage(named: countries[0]), for: .normal)
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         button3.layer.borderColor = UIColor(red: 1.0, green: 0.6, blue: 0.2, alpha: 1.0).cgColor
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
-        askQuestion()
+        askQuestion(action: nil)
     }
     
     override func didReceiveMemoryWarning() {
